@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'BMYeonSung';
+    src: url('fonts/BMYEONSUNG_ttf.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    margin: 0;
+    background-color: black;
+}
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner video {
+    width: 100%;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.banner-content {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+h1 {
+    font-family: 'BMYeonSung';
+}
+.banner-content h1 {
+    font-weight: normal!important;
+    font-size: 64px;
+    margin: 20px 0px 10px 0px;
+}
+.contact {
+    max-width: 720px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.contact p {
+    color: white;
+    margin-bottom: 0px;
+}
+.contact h1 {
+    color: goldenrod;
+    font-weight: normal;
+    margin-top: 0px;
+}
+.input-form {
+    background: none;
+    border: none;
+    border: 1px solid goldenrod;
+    width: 100%;
+    margin: 10px 0px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.input-textarea {
+    background: none;
+    border: none;
+    border: 1px solid goldenrod;
+    width: 100%;
+    margin: 10px 0px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    height: 200px;
+    resize: none;
+}
+button {
+    background-color: none;
+    border: none;
+}
+.btn-transparent {
+    background-color: transparent;
+    border: solid white 1px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+}
+.btn-transparent:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: black;
+    transition: 0.5s;
+    font-weight: bolder;
+    font-size: 18px;
+}
+/* .aboutus-cover {
+    background: url('img/bg-menu.jpg');
+    background-size: cover;
+} */
+.aboutus {
+    max-width: 720px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.aboutus h1 {
+    color: goldenrod;
+    font-weight: normal;
+}
+.aboutus p {
+    color: white;
+}
+.aboutus img {
+    width: 100%;
+}
+.menu {
+    max-width: 720px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.menu h1 {
+    color: goldenrod;
+    font-weight: normal;
+}
+.menu p {
+    color: white;
+}
+.menu img {
+    width: 100%;
+}
+.menu-item-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-item {
+    width: 50%;
+    text-align: left;
+}
+.menu-item-desc {
+    padding: 20px;
+}
+.menu-cover {
+    background: url('img/bg-menu.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0px;
+}
+.pricetag {
+    color: goldenrod;
+    font-weight: bolder;
+    font-size: 32px;
+}
+.submit-btn {
+    background: none;
+    border: solid goldenrod 1px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: goldenrod;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0;
+}
+.submit-btn:hover {
+    transition: 0.5s;
+    background: goldenrod;
+    color: white;
+}
+.footer {
+    padding: 10px;
+    background: goldenrod;
+}
+.navigation-bar {
+    background: goldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    padding: 10px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+.nav-links li a:hover {
+    transition: 0.5s;
+    font-weight: bold;
+}
+@media (max-width: 720px) {
+    .menu-item {
+        width: 100%;
+    }
+    .nav-links {
+        display: none;
+    }
+    .navigation-bar {
+        top: 0;
+    }
+    .banner {
+        margin-top: 80px;
+    }.aboutus, .menu, .contact {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
